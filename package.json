@@ -4,16 +4,23 @@
   "version": "0.3.2",
   "homepage": "https://github.com/ngbp/ngbp",
   "licenses": {
-    "type": "MIT",
-    "url": "https://raw.github.com/ngbp/ngbp/master/LICENSE"
+    "type": "",
+    "url": ""
   },
-  "bugs": "https://github.com/ngbp/ngbp/issues",
+  "bugs": "",
   "repository": {
     "type": "git",
     "url": "git@github.com:ngbp/ngbp.git"
   },
-  "dependencies": {},
+  "dependencies": {
+    "angular": "^1.7.0",
+    "angular-bootstrap": "^0.12.2",
+    "angular-mocks": "^1.7.0",
+    "angular-ui-router": "^0.2.18",
+    "bootstrap": "^3.1.1"
+  },
   "devDependencies": {
+    "copy-webpack-plugin": "^4.0.1",
     "grunt": "~0.4.1",
     "grunt-bump": "0.0.6",
     "grunt-coffeelint": "~0.0.10",
@@ -32,6 +39,10 @@
     "karma": "^0.12.9",
     "karma-coffee-preprocessor": "^0.2.1",
     "karma-firefox-launcher": "^0.1.3",
-    "karma-jasmine": "^0.1.5"
+    "karma-jasmine": "^0.1.5",
+    "webpack": "^2.6.1"
+  },
+  "scripts": {
+    "init": "webpack --config webpack.config.js"
   }
 }
